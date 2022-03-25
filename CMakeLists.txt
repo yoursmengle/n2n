@@ -1,7 +1,13 @@
 project(n2n)
-cmake_minimum_required(VERSION 2.6)
+cmake_minimum_required(VERSION 3.1)
 include(CheckFunctionExists)
 SET(CMAKE_VERBOSE_MAKEFILE ON)
+
+SET(CMAKE_SYSTEM_NAME Linux)
+SET(CMAKE_SYSTEM_PROCESSOR arm)
+
+SET(CMAKE_C_COMPILER arm-linux-gnueabihf-gcc)
+SET(CMAKE_CXX_COMPILER arm-linux-gnueabihf-g++)
 
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
